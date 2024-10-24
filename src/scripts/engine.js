@@ -23,7 +23,7 @@ const state = {
     state.view.timeLeft.textContent = state.values.curretTime;
   
     if(state.values.curretTime <= 0){
-      clearInterval(state.actions.countDownTimeId);
+      clearInterval(state.actions.countDownTimerId);
       clearInterval(state.actions.timeId);
       alert("Game Over! O seu resultado foi: " + state.values.result);
     }
