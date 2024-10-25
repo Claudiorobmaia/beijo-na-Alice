@@ -44,12 +44,42 @@
     background-color: #6db8f5;
     border-radius: 10px;
     margin: 2px;
-    cursor: url("../images/cursorbeijo.png"), auto; /* Altera o cursor para "pointer" */
+    cursor: url("../images/cursorbeijo.png"), auto; 
 }
 
 .enemy {
     background-image: url("../images/alice.jpeg");
     background-size: cover;
-    cursor: url("../images/cursorbeijo.png"), auto; /* Altera o cursor para "pointer" */
+    cursor: url("../images/cursorbeijo.png"), auto; 
 }
 
+@media (max-width: 768px) {
+    .menu {
+        
+        height: auto; 
+    }
+
+    .square {
+        height: 100px; 
+        width: 100px; 
+    }
+
+    
+    .panel {
+        
+        margin: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu {
+        height: auto; 
+        padding: 10px; 
+    }
+
+    .square {
+        height: 80px;
+        width: 80px; 
+    }
+   
+}
